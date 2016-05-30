@@ -12,12 +12,18 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Inherit Raindrop-specific board config
+include device/huawei/angler/BoardConfigRaindrop.mk
+
 $(call inherit-product, device/huawei/kiwi/full_kiwi.mk)
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit APNs list
+$(call inherit-product, vendor/raindrop/config/gsm.mk)
 
-PRODUCT_NAME := cm_kiwi
+# Inherit some common Raindrop stuff.
+$(call inherit-product, vendor/raindrop/config/common.mk)
+
+PRODUCT_NAME := raindrop_kiwi
 BOARD_VENDOR := huawei
 
 PRODUCT_GMS_CLIENTID_BASE := android-huawei
