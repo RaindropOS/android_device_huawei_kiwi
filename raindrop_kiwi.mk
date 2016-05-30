@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # Inherit Raindrop-specific board config
-include device/huawei/angler/BoardConfigRaindrop.mk
+include device/huawei/kiwi/BoardConfigRaindrop.mk
 
 $(call inherit-product, device/huawei/kiwi/full_kiwi.mk)
 
