@@ -53,7 +53,7 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1280
 
-$(call inherit-product, frameworks/native-caf/build/phone-hdpi-2048-dalvik-heap.mk)
+$(call inherit-product, frameworks/native-caf/build/phone-xhdpi-2048-dalvik-heap.mk)
 $(call inherit-product, frameworks/native-caf/build/phone-xxhdpi-2048-hwui-memory.mk)
 
 # Audio
